@@ -1,18 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Portfolio</title>
+  <title>My Portfolio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef3f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 850px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #1f3c88;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+      margin: 8px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    a {
+      color: #1565c0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #0d47a1;
+      text-decoration: underline;
+    }
+
+    .info {
+      background: #f7faff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .sub {
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    .coming {
+      color: gray;
+      font-style: italic;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>My Portfolio</h1>
+  <div class="container">
 
-<p><b>Class:</b> CISC 3610 Spring 2026</p>
-<p><b>Name:</b> Humam Khan</p>
-<p><b>Email:</b> HUMAM.KHAN84@bcmail.cuny.edu</p>
+    <h1>My Portfolio</h1>
 
-<h2>Assignments</h2>
-<ul>
-<li>Assignment 1</li>
-<li><a href="cartoon.html">Cartoon Project</a></li>
-</ul>
+    <div class="info">
+      <p><b>Class:</b> CISC 3610 Spring 2026</p>
+      <p><b>Name:</b> Humam Khan</p>
+      <p><b>Email:</b> HUMAM.KHAN84@bcmail.cuny.edu</p>
+    </div>
+
+    <h2>Projects</h2>
+
+    <ul>
+      <li>
+        Cartoon Project
+        <ul class="sub">
+          <li><a href="cartoon.html">Open Project</a></li>
+          <li>Includes multiple files (HTML + JS)</li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="multimedia-dictionary/index.html">Multimedia Dictionary</a>
+      </li>
+
+      <li class="coming">More projects coming soon...</li>
+    </ul>
+
+  </div>
+
+</body>
+</html>
