@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multimedia Dictionary</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>Multimedia Dictionary</h2>
+
+<h3>Word Section</h3>
+
+<div class="row">
+  <select id="wordMenu" onchange="syncSentence()">
+    <option value="">--Select--</option>
+    <option value="day" data-sentence="Today is a very beautiful day.">Day</option>
+    <option value="exam" data-sentence="On Monday we have an exam.">Exam</option>
+    <option value="college" data-sentence="Brooklyn College has a very good CS department.">College</option>
+    <option value="cars" data-sentence="I like driving sports cars.">Cars</option>
+    <option value="weather" data-sentence="It might rain on Monday.">Weather</option>
+  </select>
+
+  <button onclick="speakWord()">Speak Word</button>
+</div>
+
+<h3>Sentence Section</h3>
+
+<div class="row">
+  <textarea id="sentenceBox" rows="3" cols="40" readonly></textarea>
+  <button onclick="speakSentence()">Speak Sentence</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
