@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programmer Documentation</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="doc">
+<h1>Programmer Documentation</h1>
+<h2>How to Modify the JSON File</h2>
+<p>The file <code>topics.json</code> controls the app content. To add a new learning topic, add a new object inside the <code>topics</code> array.</p>
+<pre>{
+  "title": "Neptune",
+  "description": "Neptune is a cold blue planet far from the Sun.",
+  "image": "assets/images/neptune.png",
+  "audio": "assets/audio/neptune.mp3",
+  "fact": "Neptune has strong winds.",
+  "question": "Which planet is a cold blue planet?",
+  "answer": "Neptune"
+}</pre>
+<h2>Steps to Add a New Topic</h2>
+<ol>
+<li>Create a PNG image and put it in <code>assets/images</code>.</li>
+<li>Create an MP3 audio file using TTSMP3 or your own voice and put it in <code>assets/audio</code>.</li>
+<li>Add the topic information in <code>topics.json</code>.</li>
+<li>Add the new image/audio file names correctly.</li>
+<li>Refresh the app.</li>
+</ol>
+<h2>Main Files</h2>
+<ul>
+<li><code>index.html</code>: main app layout</li>
+<li><code>style.css</code>: design</li>
+<li><code>app.js</code>: menu, quiz, audio, install button</li>
+<li><code>topics.json</code>: topic data</li>
+<li><code>manifest.json</code>: PWA install settings</li>
+<li><code>service-worker.js</code>: offline cache</li>
+</ul>
+<p><a href="index.html">Back to App</a></p>
+</div>
+</body>
+</html>

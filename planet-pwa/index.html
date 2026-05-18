@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet Pocket PWA</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#111827">
+</head>
+<body>
+  <header>
+    <img src="assets/icon.png" alt="Planet Pocket icon" class="app-icon">
+    <div>
+      <h1>Planet Pocket</h1>
+      <p>A student-made learning PWA about planets.</p>
+      <button id="installBtn">Install App</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu-box">
+      <h2>Planet Menu</h2>
+      <p class="note">Click a planet. This menu comes from the JSON file.</p>
+      <div id="menu">Loading menu...</div>
+    </section>
+
+    <section class="learn-box">
+      <h2 id="topicTitle">Loading...</h2>
+      <img id="topicImage" src="" alt="Planet image">
+      <p id="topicDescription"></p>
+      <p class="fact"><b>Fun Fact:</b> <span id="topicFact"></span></p>
+      <audio id="topicAudio" controls></audio>
+      <br>
+      <button id="playAudioBtn">Play MP3 Audio</button>
+    </section>
+
+    <section class="quiz-box">
+      <h2>Quick Quiz</h2>
+      <p id="quizQuestion"></p>
+      <input id="answerInput" placeholder="Type your answer here">
+      <button id="checkBtn">Check Answer</button>
+      <p id="result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="promo.html">Promotional Page</a>
+    <a href="documentation.html">Documentation</a>
+    <a href="programmer-doc.html">Programmer Doc</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

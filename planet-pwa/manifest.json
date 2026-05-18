@@ -1,0 +1,17 @@
+{
+  "name": "Planet Pocket",
+  "short_name": "Planets",
+  "description": "A student-made PWA for learning about planets.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eaf2ff",
+  "theme_color": "#111827",
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
